@@ -41,7 +41,6 @@ func main() {
 	defer os.RemoveAll(tempDir)
 	os.Chdir(tempDir)
 	fmt.Println("director to walk ",tempDir)
-	//subdirToSkip = "skip"
 	fmt.Println("on Unix")
 	err = filepath.Walk(".", walkhelper)
 	if err != nil {
